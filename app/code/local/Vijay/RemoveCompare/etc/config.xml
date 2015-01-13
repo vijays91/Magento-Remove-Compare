@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Vijay_RemoveCompare>
+			<version>1.0.0</version>
+		</Vijay_RemoveCompare>
+	</modules>
+	
+	<frontend>
+		 <layout>
+			<updates>
+				<vijayremovecompare>
+					<file>vijaystore/remove_compare.xml</file>
+				</vijayremovecompare>
+			</updates>
+		 </layout>
+	</frontend>
+		
+	<global>
+		<helpers>
+			<catalog>
+                <rewrite>
+                    <product_compare>Vijay_RemoveCompare_Helper_Product_Compare</product_compare>
+                </rewrite>
+            </catalog>
+			
+			<vijayremovecompare>
+				<class>Vijay_RemoveCompare_Helper</class>
+			</vijayremovecompare>
+		</helpers>
+	</global>
+</config>
